@@ -1,0 +1,16 @@
+.circle {
+    width : 40px;
+    height : 40px;
+    border: 1px solid gold;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 20ms ease-in-out;
+}
+
+.head {
+    text-align: center;
+    margin: 420px;
+    font-size: 100px;
+    color: gold;
+    cursor: pointer;
+}
