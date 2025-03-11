@@ -1,0 +1,115 @@
+// question 4 //
+
+// Base class
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     describe() {
+//         console.log(this.name + 'is' + this.year + 'years old');
+//     }
+// }
+
+// // Student class
+// class Student extends Person {
+//     constructor(name, grade, result) {
+//         super(name, result);
+//         this.grade = grade;
+//         this.result = result;
+//     }
+
+//     describe() {
+//         console.log(this.name + 'is a student in grade ' + this.grade + 'and he ' + this.result + ' in all subject');
+//     }
+// }
+
+// // Teacher class
+// class Teacher extends Person {
+//     constructor(name, age, subject) {
+//         super(name, age);
+//         this.subject = subject;
+//     }
+
+//     describe() {
+//         console.log(this.name + 'is a teacher who teaches ' + this.subject);
+//     }
+// }
+
+// // Administrator class
+// class Administrator extends Person {
+//     constructor(name, age, department) {
+//         super(name, age);
+//         this.department = department;
+//     }
+
+//     describe() {
+//         console.log(this.name + 'is an administrator in the ' + this.department);
+//     }
+// }
+
+// const student = new Student("Alice", 10, "Passed");
+// const teacher = new Teacher("Mr. Smith", 35, "Mathematics");
+// const admin = new Administrator("Mrs. Johnson", 40, "Admissions");
+
+// student.describe();
+// teacher.describe();
+// admin.describe();
+
+
+
+
+
+
+// question 5 //
+
+// function Character(name, health) {
+//     this.name = name;
+//     this.health = health;
+// }
+// Character.prototype.move = function() { console.log(`${this.name} moves.`); };
+// Character.prototype.attack = function() { console.log(`${this.name} attacks!`); };
+
+// function Warrior(name, health, strength) {
+//     Character.call(this, name, health);
+//     this.strength = strength;
+// }
+// Warrior.prototype = Object.create(Character.prototype);
+// Warrior.prototype.powerAttack = function() { console.log(`${this.name} power attacks with ${this.strength}!`); };
+
+// function Mage(name, health, mana) {
+//     Character.call(this, name, health);
+//     this.mana = mana;
+// }
+// Mage.prototype = Object.create(Character.prototype);
+// Mage.prototype.castSpell = function() { console.log(`${this.name} casts a spell with ${this.mana} mana!`); };
+
+// const warrior = new Warrior("Thor", 100, 50);
+// const mage = new Mage("Merlin", 80, 100);
+
+// [warrior, mage].forEach(c => { c.move(); c.attack(); c.powerAttack?.(); c.castSpell?.(); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// question 3 //
+
+// // const current = new CurrentAccount("Bob", 500, 200);
+// // current.withdraw(600);
+// // console.log(`${current.owner}'s Balance: $${current.getBalance()}`);
